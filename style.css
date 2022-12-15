@@ -1,6 +1,57 @@
+/* GRID */
+
+
+
+/* /GRID */
+
+/* NAVBAR */
+
+.navbar {
+    width: 100vw;
+    background-color: #93003C;
+    margin: -8px;
+    padding: 10px;
+}
+
 .titleCompany {
     font-size : 40px;
+    margin: 0 20vw 0 20vw;
     text-align: center;
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* /NAVBAR */
+
+.tableArea {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100vw;
+    cursor: default;
+}
+
+.tableSkeleton {
+    width: 100%;
+    min-width: 320px;
+    max-width: 940px;
+    margin: 0 5vw 0 5vw;
+    border: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%), 
+        0 3px 4px 0 rgb(0 0 0 / 12%), 
+        0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.tableHead {
+    font-weight: 700;
+    border: 2;
+}
+
+.tableBody > tr {
+    height: 25px;
+    border-bottom: 1px solid;
 }
