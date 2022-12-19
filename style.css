@@ -55,3 +55,9 @@
     height: 25px;
     border-bottom: 1px solid;
 }
+
+.btnInserir {
+    border-radius: 80px;
+    background-color: #93003C;
+    color: #ffffff;
+}
