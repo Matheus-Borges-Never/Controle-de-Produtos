@@ -8,9 +8,11 @@
 
 .navbar {
     width: 100vw;
+    height: 10vh;
     background-color: #93003C;
     margin: -8px;
     padding: 10px;
+    overflow: hidden;
 }
 
 .titleCompany {
@@ -25,39 +27,57 @@
 /* /NAVBAR */
 
 .tableArea {
-    display: flex;
+    box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
     width: 100vw;
     cursor: default;
+    overflow: hidden;
 }
 
 .tableSkeleton {
     width: 100%;
     min-width: 320px;
     max-width: 940px;
-    margin: 0 5vw 0 5vw;
+    margin: 2vh 5vw 0 28vw;
     border: 2px;
-    box-sizing: border-box;
     box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%), 
         0 3px 4px 0 rgb(0 0 0 / 12%), 
         0 1px 5px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
 }
 
 .tableHead {
     font-weight: 700;
-    border: 2;
 }
 
 .tableBody > tr {
     height: 25px;
-    border-bottom: 1px solid;
+}
+
+.actionProd {
+    width: 79vw;
+}
+
+.inserir {
+    margin: 0vh 23vw 0 20vw;
+    text-align: right;
 }
 
 .btnInserir {
+    width: 60px;
     border-radius: 80px;
     background-color: #93003C;
     color: #ffffff;
+    border: none;
+}
+
+.delete {
+    color: #93003C;
+}
+
+.edit {
+    color: #05563E;
 }
