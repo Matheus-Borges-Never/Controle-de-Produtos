@@ -12,80 +12,67 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- JS -->
-    <link rel="stylesheet" href="controle.js">
+    <script type="text/javascript" src="js/controle.js"></script>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
 </head>
 <body>
-    <div class="titleCompany">Controle de Estoque</div>
-    <table border="1">
-        <thead>
-        <tr>
-            <th>Id</th>
-            <th>Descrição</th>
-            <th>Categoria</th>
-            <th>Peso</th>
-            <th>Altura</th>
-            <th>Largura</th>
-            <th>Comprimento</th>
-            <th>Estoque</th>
-            <th>Data Cadastro</th>
-        </tr>
+    <div class="navbar">
+        <div class="titleCompany">Controle de Estoque</div>
+    </div>
+
+    <div class="tableArea">  
+        <div class="inserir">
+            <form action="inserir/inserir.html">
+                <button type="submit" class="btnInserir">
+                    <span class="material-symbols-outlined">
+                        add
+                    </span>
+                </button>
+            </form>
+        </div>  
+    <table class="tableSkeleton">
+        <thead class="tableHead">
+            <tr>
+                <td>Id</td>
+                <td>Descrição</td>
+                <td>Categoria</td>
+                <td>Peso</td>
+                <td>Altura</td>
+                <td>Largura</td>
+                <td>Comprimento</td>
+                <td>Estoque</td>
+                <td>Data Cadastro</td>
+                <td>Deletar</td>
+                <td>Alterar</td>
+            </tr>
         </thead>
-        
-        <tr>
-            <td>01</td>
-            <td>Bono</td>
-            <td>Bolacha</td>
-            <td>126g</td>
-            <td>4.2cm</td>
-            <td>19.3cm</td>
-            <td>4.2cm</td>
-            <td>30 unidades</td>
-            <td>10-12-2022</td>
-        </tr>
-        <tr>
-            <td>02</td>
-            <td>OMO</td>
-            <td>Limpeza</td>
-            <td>1Kg</td>
-            <td>21,34cm</td>
-            <td>5,3cm</td>
-            <td>9,2cm</td>
-            <td>12 unidades</td>
-            <td>11-12-2022</td>
-        </tr>
-        <tr>
-            <td>03</td>
-            <td>Panela de Ferro</td>
-            <td>Arroz</td>
-            <td>1kg</td>
-            <td>40cm</td>
-            <td>15cm</td>
-            <td>5cm</td>
-            <td>20 unidades</td>
-            <td>10-12-2022</td>
-        </tr>
-        <tr>
-            <td>04</td>
-            <td>Banana Prata</td>
-            <td>Fruta</td>
-            <td>600g</td>
-            <td>1cm</td>
-            <td>1cm</td>
-            <td>1cm</td>
-            <td>25 unidades</td>
-            <td>14-12-2022</td>
-        </tr>
-        <tr>
-            <td>05</td>
-            <td>Coca-Cola</td>
-            <td>Refrigerante</td>
-            <td>2.05Kg</td>
-            <td>34.34cm</td>
-            <td>10.4cm</td>
-            <td>10.4cm</td>
-            <td>30 unidades</td>
-            <td>10-12-2022</td>
-        </tr>
+        <tbody class="tableBody" id="tbody">
+            <!-- <tr>
+                <td>01</td>
+                <td>Bono</td>
+                <td>Bolacha</td>
+                <td>126g</td>
+                <td>4.2cm</td>
+                <td>19.3cm</td>
+                <td>4.2cm</td>
+                <td>30 unidades</td>
+                <td>10-12-2022</td> -->
+                <!-- <td>
+                    <span class="material-symbols-outlined delete">
+                        delete
+                    </span>
+                </td>
+                <td>
+                    <span class="material-symbols-outlined edit">
+                        edit
+                    </span>
+                </td> -->
+            <!-- </tr>  -->
+        </tbody>
     </table>
+    </div>
 </body>
 </html>
