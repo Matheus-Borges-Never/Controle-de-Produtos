@@ -1,0 +1,87 @@
+
+a { color: inherit; }
+
+.back {
+    color: #fff;
+}
+
+.formArea {
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+    margin-left: 8%;
+    width: 75vw;
+    cursor: default;
+    overflow: hidden;
+}
+
+.tableSkeleton {
+    background-color: #fff;    
+    width: 40%;
+    border-radius: 8px;
+    margin-bottom: 2px;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 150px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #93003C;
+}
+
+input[type=text]:hover,
+.tableSkeleton:hover {
+    background: #ffffff;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+}
+
+.linha {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    align-items: center;
+}
+
+.formInput {
+	margin: 9px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.inputFalse {
+    visibility:hidden
+}
+
+.coluna-1 {
+    align-items: start;    
+}
+
+.coluna-2 {
+    align-items: center;
+}
+
+.coluna-3 {
+    align-items: end;
+}
+
+.confirmar {
+    margin: 3vh 28vw 0 10vh;
+    text-align: right;
+}
+
+.btnConfirmar {
+    width: 60px;
+    border-radius: 80px;
+    background-color: #93003C;
+    color: #ffffff;
+    border: none;
+}

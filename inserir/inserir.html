@@ -1,1 +1,85 @@
-<a href="../"><h1>Teste</h1></a>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/logo-controle-estoque.png" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="inserir.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="../js/controle.js"></script>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="back">
+            <a href="../index.html">
+                <span class="material-symbols-outlined">
+                    keyboard_return
+                </span>
+            </a>
+        </div>
+        <div class="titleCompany">
+            Cadastrar Produto
+        </div>
+    </div>
+
+    <div class="confirmar">
+        <button id="salvar" onclick="inserirProduto" class="btnConfirmar">
+            <span class="material-symbols-outlined">
+                done
+            </span>
+        </button>
+    </div>
+
+    <div class="formArea">   
+            <div class="tableSkeleton">
+                <div class="formulario">
+                    <div class="linha">
+                        <div class="formInput coluna-1">
+                            <input type="text" id="descricao" placeholder="Descrição" class="cpDescricao">
+                        </div>
+                        <div class="formInput coluna-2 inputFalse">
+                            <input type="text">
+                        </div>
+                        <div class="formInput coluna-3">
+                            <input type="text" id="categoria" placeholder="Categoria" class="cpCategoria">
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="formInput coluna-1">
+                            <input type="text" id="peso" placeholder="Peso" class="cpPeso">
+                        </div>
+                        <div class="formInput coluna-2">
+                            <input type="text" id="altura" placeholder="Altura" class="cpAltura">
+                        </div>
+                        <div class="formInput coluna-3">
+                            <input type="text" id="largura" placeholder="Largura" class="cpLargura">
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <div class="formInput coluna-1">
+                            <input type="text" id="comprimento" placeholder="Comprimento" class="cpComprimento">
+                        </div>
+                        <div class="formInput coluna-2 inputFalse">
+                            <input type="text">
+                        </div>
+                        <div class="formInput coluna-3">
+                            <input type="text" id="estoque" placeholder="Estoque" class="cpEstoque">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
