@@ -1,10 +1,8 @@
-/* GRID */
-
-
-
-/* /GRID */
-
 /* NAVBAR */
+
+body {
+    overflow: hidden;
+}
 
 .navbar {
     width: 100vw;
@@ -16,7 +14,7 @@
 }
 
 .titleCompany {
-    font-size : 40px;
+    font-size: 40px;
     margin: 0 20vw 0 20vw;
     text-align: center;
     font-weight: 600;
@@ -26,12 +24,14 @@
 
 /* /NAVBAR */
 
+/* Tabela */
+
 .tableArea {
     box-sizing: border-box;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 5vh;
+    margin-top: -7vh;
     width: 100vw;
     cursor: default;
     overflow: hidden;
@@ -41,21 +41,24 @@
     width: 100%;
     min-width: 320px;
     max-width: 940px;
-    margin: 2vh 5vw 0 28vw;
+    margin: -6vh 5vw 10vh 28vw;
     border: 2px;
-    box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%), 
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%),
         0 3px 4px 0 rgb(0 0 0 / 12%),
         0 1px 5px 0 rgb(0 0 0 / 20%);
     overflow: hidden;
-    margin-bottom: 2px;
+    background-color: #ffffff;
+    border-radius: 7px;
 }
 
 .tableHead {
     font-weight: 700;
+    text-align: center;
 }
 
-.tableBody > tr {
+.tableBody>tr {
     height: 25px;
+    text-align: center;
 }
 
 .actionProd {
@@ -63,7 +66,7 @@
 }
 
 .inserir {
-    margin: 0vh 23vw 0 20vw;
+    margin: 8vh 19vw 0 77vw;
     text-align: right;
 }
 
@@ -82,3 +85,219 @@
 .edit {
     color: #05563E;
 }
+
+.acao {
+    cursor: pointer;
+}
+
+/* /Tabela */
+
+/* Modal */
+
+@media (max-width: 700px) {
+    body {
+        font-size: 10px;
+    }
+
+    .header span {
+        font-size: 15px;
+    }
+
+    #new {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    thead tr th.acao {
+        width: auto !important;
+    }
+
+    td button i {
+        font-size: 20px !important;
+    }
+
+    td button i:first-child {
+        margin-right: 0;
+    }
+
+    .modal {
+        width: 90% !important;
+    }
+
+    .modal label {
+        font-size: 12px !important;
+    }
+}
+
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.modal label {
+    font-size: 14px;
+    width: 100%;
+}
+
+.modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.modal button {
+    outline: none;
+    border-radius: 20px;
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #93003C;
+    color: white;
+    font-size: 20px;
+    cursor: pointer !important;
+}
+
+.modal button:hover {
+    height: 48px;
+    background-color: #ad0548;
+    color: white;
+    font-size: 24px;
+}
+
+.active {
+    display: flex;
+}
+
+.active .modal {
+    animation: modal .4s;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+td button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+td button i {
+    font-size: 25px;
+}
+
+td button i:first-child {
+    margin-right: 10px;
+}
+
+.mNavbar {
+    width: 53.2vw;
+    height: 3vh;
+    background-color: #93003C;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: -3.7vh;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 2vh;
+}
+
+a { color: inherit; }
+
+.back {
+    color: #fff;
+}
+
+.mTitleCompany {
+    font-size: 30px;
+    margin: -3vh 20vw 0 20vw;
+    text-align: center;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+
+}
+
+.linha {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 3vh;
+    margin-right: 2vh;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    align-items: center;
+}
+
+input {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    width: 150px;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: #93003C;
+}
+
+input:hover,
+.formulario:hover {
+    background: #ffffff;
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+}
+
+.formInput {
+	margin: 9px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.inputFalse {
+    visibility:hidden
+}
+
+.coluna-1 {
+    align-items: start;    
+}
+
+.coluna-2 {
+    align-items: center;
+}
+
+.coluna-3 {
+    align-items: end;
+}
+
+
+/* /Modal */
