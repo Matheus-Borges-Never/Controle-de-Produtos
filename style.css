@@ -46,9 +46,10 @@ body {
     box-shadow: 0 0 4px 0 rgb(0 0 0 / 14%),
         0 3px 4px 0 rgb(0 0 0 / 12%),
         0 1px 5px 0 rgb(0 0 0 / 20%);
-    overflow: hidden;
     background-color: #ffffff;
     border-radius: 7px;
+    height: 200px !important;
+    overflow-y: scroll;
 }
 
 .tableHead {
